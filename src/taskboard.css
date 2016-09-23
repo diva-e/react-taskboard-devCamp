@@ -1,0 +1,91 @@
+.taskboard{
+	width:100%;
+	display:flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+	font-size: 20px;
+}
+
+
+.taskboard #title{
+	margin-bottom: 50px;
+	text-align:center;
+	font-size: 30px;
+}
+
+
+
+
+/*---------------area-------------------*/
+
+.taskboard .area{
+	width:100%;
+	display:flex;
+	flex-flow: row nowrap;
+}
+
+.taskboard .area .column{
+	display:flex;
+	flex-flow: row wrap;
+	flex-grow: 1;
+	flex-basis: 0;
+	word-wrap: break-word;
+	border-style: solid;
+ 	border-width:  0px 5px 0px 0px;
+ 	padding-top: 10px
+}
+
+.taskboard .area .column:last-child{
+    border-width:  0px 0px 0px 0px;
+}
+
+.taskboard .area .column.column-one{
+	flex-grow: 0.5;
+    justify-content: center;
+}
+
+
+
+/*---------------header-------------------*/
+
+.taskboard .header .column{
+	justify-content: center;
+	border-width:  0px 5px 5px 0px;
+}
+
+.taskboard .header .column:last-child{
+    border-width:  0px 0px 5px 0px;
+}
+
+
+
+/*---------------story-------------*/
+
+.taskboard .story .task{
+	background-color: yellow;
+	margin:10px;
+	padding: 5px;
+	min-width: 100px;
+    max-width: 100px;
+    min-height: 50px;
+	text-align:center;
+}
+
+.taskboard .story .task .options{
+	text-align: right;
+}
+
+/*---------------icons-------------------*/
+.taskboard .icon{
+	margin:5px;
+}
+
+.taskboard .icon.icon-cross{
+	color:red;
+	font-size: 0.7em;
+	text-align: right;
+}
+.taskboard .icon.icon-plus{
+	 min-height: 60px;
+	 margin:10px;
+}
